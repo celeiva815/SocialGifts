@@ -1,0 +1,7 @@
+c:\users\android\documents\visual studio 2010\Projects\TestProject\TestProject\bin\TestProject.dll
+c:\users\android\documents\visual studio 2010\Projects\TestProject\TestProject\bin\TestProject.pdb
+c:\users\android\documents\visual studio 2010\Projects\TestProject\TestProject\bin\EntityFramework.dll
+c:\users\android\documents\visual studio 2010\Projects\TestProject\TestProject\bin\EntityFramework.xml
+c:\users\android\documents\visual studio 2010\Projects\TestProject\TestProject\obj\Debug\ResolveAssemblyReference.cache
+c:\users\android\documents\visual studio 2010\Projects\TestProject\TestProject\obj\Debug\TestProject.dll
+c:\users\android\documents\visual studio 2010\Projects\TestProject\TestProject\obj\Debug\TestProject.pdb

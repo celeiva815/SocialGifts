@@ -1,0 +1,53 @@
+﻿@{
+    /*
+     * Este es el layout por default.
+     * 
+     * Variables no definidas acá como ViewBag.Title deben ser obligatoriamente definidas por las vistas
+     * que se van a envolver.
+     * 
+     * Para hacer links entre una página y otra usen el método Html.ActionLink()
+     * Noten que una de las sobrecargas del método permite pasar parámetros mediante un objeto anónimo
+     * al action designado.
+     * 
+     * Pedazos de código reutilizable que no corresponden al layout se pueden definir en un partial.
+     * 
+     * El comando Url.Content permite referenciar archivos dentro de su ruta.
+     * Esto les permite abstraerse de las rutas absolutas finales al momento de desplegar su aplicación
+     * en el servidor final.
+     * 
+     * @RenderBody es el placeholder de todo el html que este layout va a cubrir.
+     */
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")" type="text/javascript"></script>
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            <div id="title">
+                <h1>My MVC Application</h1>
+            </div>
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <div id="menucontainer">
+                <ul id="menu">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            @RenderBody()
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+</body>
+</html>

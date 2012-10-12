@@ -1,0 +1,38 @@
+﻿@{
+    /*
+     
+     * Esta es la vista correspondiente al controlador Test y su action Index. A grandes rasgos la vista
+     * contiene el html que luego el browser va a desplegar al cliente, por lo que el 90% de su contenido
+     * son tags html.
+     * 
+     * Si queremos hacer cómputo, asignación de variables o acceder a los datos compartidos por el controlador
+     * usamos el motor de rendering Razor, el cual se accede mediante la letra @
+     * 
+     * Para ejecutar bloque de código usar: @{ ... }
+     * Para imprimir una variable usar: @Variable
+     * Para realizar iteraciones usar: foreach(var x in iterator){ ... }
+     * Para realizar condiciones usar: if (boolean) { ... }
+     * 
+     * El código en una vista es envuelto por el template definido en el layout ubicado en la ruta
+     * espcificada por la variable Layout.
+     * 
+     * Pueden definir sus propios layouts y referenciarlos cambiando el valor de esa variable.
+     
+     */
+}
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_customlayout.cshtml";
+}
+
+<h2>Hola Mundo</h2>
+
+<ul>
+@foreach (string elemento in ViewBag.test)
+{
+    <li>
+    @elemento
+    </li>
+}
+</ul>
