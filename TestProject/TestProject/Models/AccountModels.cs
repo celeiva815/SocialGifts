@@ -12,7 +12,7 @@ namespace TestProject.Models
     {
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Current password")]
+        [Display(Name = "Current password")] //Aquí agregamos texto!
         public string OldPassword { get; set; }
 
         [Required]
